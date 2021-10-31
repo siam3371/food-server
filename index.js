@@ -18,7 +18,7 @@ async function run() {
     try {
       await client.connect();
        const food = client.db("food_server");
-      const product = food.collection("product");
+      const product = food.collection("product");   
 //  GET API
        app.get('/product', async(req, res)=> {
         const cursor = product.find({});
