@@ -29,8 +29,7 @@ async function run() {
 app.post( '/product',async(req, res) => {
   const newService = req.body;
   const result = await product.insertOne(newService)    
-console.log('hitting the poast',req.body)
-console.log('add a user', result)
+ console.log('add a user', result)
 res.json(result)
 })
      } 
